@@ -4,8 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SQRATCHCLICK | Contact</title>
+  <title>SqratchClick | Welcome</title>
   <link rel="stylesheet" href="./fonts/fontawesome-free-web/css/all.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Niconne&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <meta name="description" content="Professional DJ and photo booth services for weddings, parties, dances, proms and more.">
   <meta name="keywords" content="dj, sqratchclick, todd dumas, wedding dj, prom dj, party dj, photo booth, 
@@ -13,26 +16,32 @@
 </head>
 <body>
   <header>
-    <div class="container">
-      <div id="branding">
-        <h1><span class="highlight">SQRATCHCLICK</span></h1>
+    <div class="header-container">
+      <div>
+        <h1><span class="business-name">SqratchClick</span></h1>
       </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="reviews.html">Reviews</a></li>
-          <li><a href="referrals.html">Referrals</a></li>
-          <li class="current"><a href="contact.html">Contact</a></li>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="reviews.html" class="nav-link">Reviews</a></li>
+          <li class="nav-item"><a href="referrals.html" class="nav-link">Referrals</a></li>
+          <li id="current" class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </div>
   </header>
+  <script src="./javascript/script.js"></script>
 
   <section id="social-media">
     <div class="container-social">
-      <p>Follow us on social media for the latest photos, videos and upcoming events</p>
+      <p>Follow us on social media for the latest photos, videos and upcoming events.</p>
         <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></a></i>
         <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></a></i>
         <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></a></i>
@@ -45,6 +54,7 @@
       <h1 class="page-title">Contact us | Send us a Review | Ask for a Quote
       </h1>
       <form class="form-submit" action="https://formsubmit.co/21133fae90aca9d9138f623572eb2aab" method="POST">
+        
         <!--Honeypot-->
         <input type="text" name="_honey" style="display:none">
 
@@ -80,7 +90,7 @@
   </section>
 
   <footer>
-    <p>SQRATCHCLICK, Copyright &copy; 2022</p>
+    <p>SqratchClick, Copyright &copy; 2022</p>
   </footer>
 </body>
 </html>
