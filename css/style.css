@@ -17,6 +17,21 @@ body {
   overflow: hidden;
 }
 
+.page-title {
+  font-family: "Niconne", cursive;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  background-color:#35424a;
+  color:rgb(255, 115, 0);
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px 0;
+  border-top: 3px solid rgb(255, 115, 0);
+  border-bottom: 3px solid rgb(255, 115, 0);
+
+}
+
 .button_1 {
   height: 38px;
   background: #ff7300;
@@ -201,12 +216,6 @@ aside#sidebar .quote textarea {
   padding: 5px;
 }
 
-/* main-col */
-article#main-col {
-  float: left;
-  width: 65%;
-}
-
 /* Services */
 ul#services li {
   list-style: none;
@@ -234,10 +243,7 @@ ul#services li {
   margin-top: 15px;
 }
 
-.page-title {
-  text-align: center;
-  margin-bottom: 20px;
-}
+
 
 .form-container button {
   width: 100%;
@@ -329,20 +335,6 @@ main h1 {
 }
 
 /* Photo Gallery */
-.gallery-container h2 {
-  font-family: "Niconne", cursive;
-  font-size: 40px;
-  text-align: center;
-  background-color:#35424a;
-  color:rgb(255, 115, 0);
-  width: 100%;
-  margin: 10px 0;
-  padding: 15px 0;
-  border-top: 3px solid rgb(255, 115, 0);
-  border-bottom: 3px solid rgb(255, 115, 0);
-
-}
-
 .gallery-container {
   display: grid;
   justify-items: center;
