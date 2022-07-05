@@ -329,6 +329,20 @@ main h1 {
 }
 
 /* Photo Gallery */
+.gallery-container h2 {
+  font-family: "Niconne", cursive;
+  font-size: 40px;
+  text-align: center;
+  background-color:#35424a;
+  color:rgb(255, 115, 0);
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px 0;
+  border-top: 3px solid rgb(255, 115, 0);
+  border-bottom: 3px solid rgb(255, 115, 0);
+
+}
+
 .gallery-container {
   display: grid;
   justify-items: center;
@@ -397,6 +411,11 @@ footer {
 
 /* Photo-Gallery */
 @media (min-width: 360px) and (max-width: 539px) {
+
+  .gallery-container h2 {
+    font-size: 30px;
+  }
+
   #featured {
     max-width: 320px;
     height: 320px;
@@ -447,6 +466,10 @@ footer {
 
   /* Galaxy Fold */
 @media (min-width: 280px) and (max-width: 359px) {
+  .gallery-container h2 {
+    font-size: 25px;
+  }
+
   #featured {
     max-width: 250px;
     height: 250px;
@@ -480,6 +503,13 @@ footer {
 }
 
 /* Hamburger Menu */
+@media (min-width: 360px) and (max-width: 539px) {
+.navbar {
+  margin-left: 100px;
+}
+
+}
+
 @media (max-width: 968px) {
   .hamburger {
     display: block;
@@ -520,6 +550,10 @@ footer {
 
 /* Galaxy Fold */
 @media (min-width: 280px) and (max-width: 359px) {
+  .navbar {
+    margin-left: 20px;
+  }
+
   #featured {
     width: 280px;
   }
@@ -770,6 +804,25 @@ footer {
 }
 
 @media (min-width: 912px) and (max-width: 1024px) {
+  
+  .gallery-container h2 {
+    font-size: 30px;
+  }
+
+  #featured {
+    max-width: 450px;
+    height: 450px;
+  }
+  .thumbnail {
+    object-fit: cover;
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  #slider {
+    width: 400px;
+  }
+
   .business-name {
     font-size: 40px;
   }
