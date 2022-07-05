@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SqratchClick | Photo-Gallery</title>
+  <link rel="stylesheet" href="./fonts/fontawesome-free-web/css/all.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Niconne&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="description" content="Professional DJ and photo booth services for weddings, parties, dances, proms and more.">
+  <meta name="keywords" content="dj, sqratchclick, todd dumas, wedding dj, prom dj, party dj, photo booth, 
+        best dj in michigan, best dj in ohio, affordable dj, event dj, professional dj">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div>
+        <h1><span class="business-name">SqratchClick</span></h1>
+      </div>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="reviews.html" class="nav-link">Reviews</a></li>
+          <li id="current"class="nav-item"><a href="photo-gallery.html" class="nav-link">Photo Gallery</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script src="./javascript/script.js"></script>
+
+  <section id="social-media">
+    <div class="container-social">
+      <p>Follow us on social media for the latest photos, videos and upcoming events.</p>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></a></i>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></a></i>
+        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></a></i>
+      </div>
+  </section>
+
+<section>
+    <main>
+      <div class="gallery-container">
+        <h1>Photo Gallery</h1>
+
+          <div class="large-photo-container">
+
+            <img id="featured" src="./img/photo-gallery/Todd_Feb_2020.jpg" alt="Todd Feb 2020 large image">
+          </div>
+
+          <div id="slide-wrapper">
+              <img src="./img/left-arrow.png" alt="Left Arrow" id="slideLeft" class="arrow">
+              <div id="slider">
+              <img class="thumbnail active" src="./img/photo-gallery/Todd_Feb_2020.jpg" alt="Todd Feb 2020 thumbnail"></a>
+              <img class="thumbnail" src="./img/photo-gallery/todd_event_ready.jpg" alt="Todd event ready thumbnail"></a>
+              <img class="thumbnail" src="./img/photo-gallery/todd_demar_outside.jpeg" alt="Todd and Demar outside thumbnail"></a>
+              <img class="thumbnail" src="./img/photo-gallery/outdoor_dj_event.jpg" alt="Outdoor Dj Event thumbnail"></a>
+              <img class="thumbnail" src="./img/photo-gallery/todd_demar_event.jpg" alt="Todd and Demar Event thumbnail"></a>
+              <img class="thumbnail" src="./img/photo-gallery/todd_demar_1.jpg" alt="Todd and Demar thumbnail"></a>
+              <img class="thumbnail" src="./img/photo-gallery/blue_turntable.jpg" alt="Blue Turntable thumbnail"></a>
+              <img class="thumbnail" src="./img/photo-gallery/halloween_party.jpeg" alt="Halloween party thumbnail"></a>
+            </div>
+
+            <img src="./img/right-arrow.png" alt="Right Arrow" id="slideRight" class="arrow">
+
+            </div>
+            <script type="text/javascript">
+              let thumbnails = document.getElementsByClassName('thumbnail')
+              
+              let activeImages = document.getElementsByClassName('active')
+
+              for (var i=0; i < thumbnails.length; i++){               
+
+                thumbnails[i].addEventListener('mouseover', function(){
+
+                
+                if(activeImages.length > 0){
+                      activeImages[0].classList.remove('active')
+                  }
+                  
+
+                  this.classList.add('active')
+                  document.getElementById('featured').src = this.src
+                })
+              }
+
+              let buttonRight = document.getElementById('slideRight');
+              let buttonLeft = document.getElementById('slideLeft');
+
+              buttonRight.addEventListener('click', function(){
+                document.getElementById('slider').scrollLeft += 180
+              })
+
+              buttonLeft.addEventListener('click', function(){
+                document.getElementById('slider').scrollLeft -= 180
+              })
+
+            </script>
+      </div>
+  </main>
+</section>
+
+  <footer>
+    <p>SqratchClick, Copyright &copy; 2022</p>
+  </footer>
+</body>
+</html>
