@@ -164,6 +164,7 @@ header #current a {
 
 .fa-instagram:hover {
   opacity: 0.8;
+  border-radius: 6px;
   background: linear-gradient(
     45deg,
     #405de6,
@@ -173,7 +174,7 @@ header #current a {
     #e1306c,
     #fd1d1d
   );
-  transition-duration: 0.2s;
+
 }
 
 .fa-youtube:hover {
